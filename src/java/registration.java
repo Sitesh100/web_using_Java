@@ -9,6 +9,7 @@ public class registration extends HttpServlet
     {
         res.setContentType("text/html");
         PrintWriter pw1= res.getWriter();
+        //till the pw1 all the line gonna be same in every file just below lines gonna be change.
         String Email=req.getParameter("n1");
         String Pass = req.getParameter("n2");
         String Name=req.getParameter("n3");
@@ -17,6 +18,7 @@ public class registration extends HttpServlet
         
         
         pw1.println
-                ("<html><body bgcolor=skyblue>Your Email is "+Email+"<br>Your Password is "+Pass+"<br>Your Name is "+Name+"<br> Your Contact no. "+Contact+"</body></html>");
+                ("<html><body bgcolor=skyblue>Your Email is "+Email+"<br>Your Password is "
+                        + ""+Pass+"<br>Your Name is "+Name+"<br> Your Contact no. "+Contact+"</body></html>");
     }
 }
